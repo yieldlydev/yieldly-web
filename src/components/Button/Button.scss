@@ -1,0 +1,23 @@
+.button {
+  display: flex;
+  justify-content: center;
+  background-color: #eb5e28;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  padding: 4px;
+  margin: 4px;
+  min-width: 80px;
+  border-radius: 4px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}

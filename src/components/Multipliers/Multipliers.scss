@@ -1,0 +1,42 @@
+.multipliers {
+  box-sizing: border-box;
+  text-align: center;
+
+  .multiplier-options {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid gray;
+  }
+
+  .multiplier-inputs {
+    display: flex;
+    justify-content: space-evenly;
+
+    font-size: 12px;
+    font-weight: bold;
+    .multiplier-purchase-button {
+      cursor: pointer;
+    }
+  }
+
+  .multiplier-token {
+    padding: 7px;
+    flex: 1;
+    cursor: pointer;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    &.active {
+      text-decoration: underline;
+    }
+  }
+
+  .multiplier-token:first-child {
+    border-bottom-left-radius: 7px;
+  }
+
+  .multiplier-token:last-child {
+    border-bottom-right-radius: 7px;
+  }
+}

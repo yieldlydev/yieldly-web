@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #252422;
+  color: #fffcf2;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+  cursor: not-allowed !important;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+a:hover {
+  color: #eb5e28;
+}

@@ -1,0 +1,96 @@
+.farm {
+  align-items: center;
+  min-height: 75px;
+  margin: 14px 0 0;
+
+  background-color: #161614;
+
+  border-radius: 7px;
+  border: 1px solid #ccc5b9;
+
+  font-size: 16px;
+
+  .farm-upper {
+    margin: 7px 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .farm-header {
+    padding: 10px;
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+  }
+
+  .farm-icon {
+    margin-right: 14px;
+    margin-left: 14px;
+  }
+
+  .farm-name {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .farm-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+    padding: 10px;
+  }
+
+  .data-entry {
+    text-align: center;
+    flex: 1;
+  }
+
+  .data-title {
+    font-size: 13px;
+  }
+
+  .data-value {
+    margin: 4px 0;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .farm-inputs {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-stack {
+    display: flex;
+    margin: 4px 0 0;
+  }
+
+  .opener {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 14px;
+    cursor: pointer;
+  }
+
+  .farm-input {
+    width: 150px;
+    height: 25px;
+
+    background-color: #403d39;
+
+    margin-top: 3px;
+    margin-right: 14px;
+    border: 1px solid #ccc5b9;
+    border-radius: 4px;
+
+    text-align: center;
+    color: #e9e4dc;
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
