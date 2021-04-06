@@ -50,7 +50,9 @@ function Farms() {
             1,000,000 of YLDLY-S and 1,500,000 of YLDLY-I token supply was initially offered through the corresponding WBNB pair - rest of
             the public distribution will be claimed through participating in the liquidity mining.
           </p>
-          <p>The event is planned to start in week 14 of 2021 and will last a total of 40 weeks.</p>
+          <p>
+            The event is planned to start in <b>week 14</b> of 2021 and will last a total 40 weeks.
+          </p>
           <p>
             This event happens through common staking contract derivates with added functionality for Yieldly ecosystem-token holders and
             users who timelock their stakes.
