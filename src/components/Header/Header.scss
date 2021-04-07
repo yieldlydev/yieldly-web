@@ -44,6 +44,32 @@
     border: 1px solid grey;
   }
 
+  .buy-links {
+    display: flex;
+  }
+
+  .get-s {
+    background-color: #63ce5a;
+    color: #161614;
+    transition: 0.2s all ease-in-out;
+  }
+
+  .get-i {
+    background-color: #63ce5a;
+    color: #161614;
+    transition: 0.2s all ease-in-out;
+  }
+
+  .account {
+    display: flex;
+    align-items: center;
+    font-size: 12;
+    margin-right: 14px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background-color: #b67122;
+  }
+
   .price-dollar {
     margin-top: 4px;
     color: #7dee73;

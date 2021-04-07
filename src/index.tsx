@@ -3,10 +3,24 @@ import ReactDOM from "react-dom";
 import { Web3ReactProvider } from "@web3-react/core";
 import { providers } from "ethers";
 import { QueryClient, QueryClientProvider } from "react-query";
+import { persistQueryClient } from "react-query/persistQueryClient-experimental";
+import { createLocalStoragePersistor } from "react-query/createLocalStoragePersistor-experimental";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./index.css";
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      cacheTime: process.env.NODE_ENV === "development" ? 1000 * 30 : 1000 * 60 * 1, // 30 seconds on dev - 1 minute on prod.
+    },
+  },
+});
+const localStoragePersistor = createLocalStoragePersistor();
+persistQueryClient({
+  queryClient,
+  persistor: localStoragePersistor,
+});
+
 function getLibrary(provider: any, connector: any) {
   return new providers.Web3Provider(provider); // this will vary according to whether you use e.g. ethers or web3.js
 }
