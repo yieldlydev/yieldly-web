@@ -4,6 +4,8 @@
   .voting {
     display: flex;
     flex-direction: row;
+    pointer-events: none;
+    opacity: 0.4;
 
     @media screen and (max-width: 900px) {
       flex-direction: column;
