@@ -6,9 +6,9 @@ import "./Sidemenu.scss";
 const menuItems: any = [
   ["ecosystem", BsQuestionCircleFill, false],
   ["farming", BsGearWideConnected, false],
+  ["governance", BsExclamationTriangle, false],
   ["swap", BsExclamationTriangle, true],
   ["lottery", BsExclamationTriangle, true],
-  ["governance", BsExclamationTriangle, true],
   ["bridge", BsExclamationTriangle, true],
 ];
 

@@ -14,10 +14,11 @@ import { WalletConnectConnector } from "@web3-react/walletconnect-connector";
 const POLLING_INTERVAL = 12000;
 const RPC_URLS: { [chainId: number]: string } = {
   56: "https://bsc-dataseed.binance.org/" as string,
+  97: "https://data-seed-prebsc-1-s1.binance.org",
 };
 
 export const injected = new InjectedConnector({
-  supportedChainIds: [56],
+  supportedChainIds: [56, 97],
 });
 
 export const walletconnect = new WalletConnectConnector({

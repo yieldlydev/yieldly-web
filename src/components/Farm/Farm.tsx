@@ -20,7 +20,7 @@ function Farm({ farm }: Props) {
           <div className="farm-name">{farm.name}</div>
         </div>
         <div className="farm-data">
-          <div className="data-entry apy">
+          <div className="data-entry alloc">
             <div className="data-title">Allocation</div>
             <div className="data-value">0%</div>
           </div>
@@ -28,7 +28,7 @@ function Farm({ farm }: Props) {
             <div className="data-title">Global APY</div>
             <div className="data-value">0%</div>
           </div>
-          <div className="data-entry apy">
+          <div className="data-entry multi">
             <div className="data-title">Your multiplier</div>
             <div className="data-value">0% </div>
           </div>
@@ -42,7 +42,7 @@ function Farm({ farm }: Props) {
           </div>
         </div>
         <div className="opener">
-          <BsFillCaretLeftFill style={isOpen ? { transform: "rotate(-90deg)" } : {}} size="28" />
+          <BsFillCaretLeftFill style={isOpen ? { transform: "rotate(-90deg)" } : {}} size="22" />
         </div>
       </div>
       {isOpen && (

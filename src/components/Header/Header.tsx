@@ -35,18 +35,22 @@ function Header() {
       </div>
       <div className="prices">
         <div className="price">
-          <div>YLDLY-S</div> <span className="price-dollar">${prices ? prices.yldlys : ".."}</span>
+          <div>S</div> <span className="price-dollar">${prices ? prices.yldlys : ".."}</span>
           <div className="get-button"></div>
         </div>
         <div className="price">
-          <div>YLDLY-I</div> <span className="price-dollar">${prices ? prices.yldlyi : ".."}</span>
+          <div>I</div> <span className="price-dollar">${prices ? prices.yldlyi : ".."}</span>
         </div>
         <div className="price">
           <div>BNB</div> <span className="price-dollar">${prices ? prices.bnb : ".."}</span>
         </div>
       </div>
       <div className="connect">
-        {wrongNetwork && <div className="wrong-network">Switch to BSC</div>}
+        {wrongNetwork && (
+          <div className="wrong-network" style={{ fontSize: "10px", fontWeight: "bold", marginRight: "14px" }}>
+            Wrong network!
+          </div>
+        )}
         {account ? `${account.substring(0, 5)}...${account.substring(36, 50)}` : <Wallet />}
       </div>
     </div>

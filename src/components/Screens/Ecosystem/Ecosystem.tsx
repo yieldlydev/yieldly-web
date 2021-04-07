@@ -36,7 +36,7 @@ function Ecosystem() {
           </p>
           <h4>Liquidity mining</h4>
           <p>
-            Yieldlys liquidity mining event will distribute the token supply to its users as a reward for participation in the project
+            Yieldlys liquidity mining e†vent will distribute the token supply to its users as a reward for participation in the project
             launch.
           </p>
           <p>Liquidity mining event includes the following distribution</p>
@@ -45,6 +45,11 @@ function Ecosystem() {
             <li>6,000,000 YLDLY-I tokens</li>
           </ul>
           <p>There are a few important properties which users should know before taking part in the event:</p>
+          <h4>Reflections</h4>
+          <p>
+            By staking in the contract stakers will also receive additional rewards through the reflections and by the automatic inflation
+            the whole liquidity mining allocation gets from the network transactions.
+          </p>
           <h4>Yield multipliers</h4>
           <p>
             Yieldly uses a novel mechanic of increasing user yields by several mechanisms, these include:
@@ -55,10 +60,11 @@ function Ecosystem() {
             </ul>
             <h5>YLDLY-S multiplier breakdown</h5>
             <ul>
-              <li>10% stake multiplier - 200 YLDLY-S</li>
-              <li>20% stake multiplier - 500 YLDLY-S</li>
-              <li>30% stake multiplier - 1000 YLDLY-S</li>
-              <li>40% stake multiplier - 3000 YLDLY-S</li>
+              <li>5% stake multiplier - 500 YLDLY-S</li>
+              <li>10% stake multiplier - 1000 YLDLY-S</li>
+              <li>20% stake multiplier - 2000 YLDLY-S</li>
+              <li>30% stake multiplier - 4000 YLDLY-S</li>
+              <li>40% stake multiplier - 8000 YLDLY-S</li>
             </ul>
             <h5>Spendable multiplier breakdown</h5>
             <ul>
@@ -73,7 +79,7 @@ function Ecosystem() {
             </ul>
             <p>
               All multipliers are additive so purchasing eg. two 5% stake multipliers and holding 500 YLDLY-S will result in a total stake
-              multiplier of 30%.
+              multiplier of 15%.
             </p>
           </p>
           <h4>Risks of liquidity providing</h4>
@@ -116,18 +122,18 @@ function Ecosystem() {
               <li>1% fee on transfer (and sell)</li>
               <li>Adjustable fees through governance</li>
             </ul>
-            <img src={yldlysdist} width="800" height="450" alt="YLDLY-S token distribution" style={{ border: "2px solid white" }} />
+            <img src={yldlysdist} width="400" height="225" alt="YLDLY-S token distribution" style={{ border: "2px solid white" }} />
           </p>
           <p style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
             <b>YLDLY-I</b>
             <ul>
               <li>10,000,000 initial supply</li>
-              <li>0.5% fee on transfer (and sell)</li>
-              <li>0.5% burn on transfer (and sell)</li>
+              <li>5% fee on transfer</li>
+              <li>50% burn from the transfer fee (2.5%) </li>
               <li>Adjustable fees through governance</li>
               <li>Automatic supply inflation with a rate of 1.5 YIELD I per second</li>
             </ul>
-            <img src={yldlyidist} width="800" height="425" alt="YLDLY-S token distribution" style={{ border: "2px solid white" }} />
+            <img src={yldlyidist} width="400" height="225" alt="YLDLY-S token distribution" style={{ border: "2px solid white" }} />
           </p>
         </Card>
       </div>

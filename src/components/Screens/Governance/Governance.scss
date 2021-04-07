@@ -1,0 +1,77 @@
+.governance {
+  padding: 7px 14px;
+
+  .voting {
+    display: flex;
+    flex-direction: row;
+
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+
+  .governane-i {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .proposal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .governance-item {
+    flex: 1;
+    margin: 0 14px;
+    padding: 7px;
+    border: 1px solid #eb5e28;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+    .current-value {
+      font-weight: bold;
+      font-size: 20px;
+      margin: 7px 0px;
+    }
+  }
+
+  .governance-i-c {
+    flex: 3;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+
+  .governance-i-container {
+    flex: 1;
+  }
+
+  .s-c {
+    flex: 2;
+  }
+
+  .button {
+    margin: 14px;
+  }
+  .governance-i {
+    margin: 0 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 900px) {
+      margin: 14px;
+    }
+  }
+
+  .overview {
+    padding: 0 30px;
+  }
+}
