@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useWeb3React } from "@web3-react/core";
 import { injected } from "./connectors";
-import Button from "../components/Button/Button";
 
 enum ConnectorNames {
   Injected = "Injected",
@@ -41,17 +40,16 @@ function Wallet() {
           const currentConnector = connectorsByName[name];
 
           return (
-            <Button
-              handler={() => {
+            <div
+              key={name}
+              onClick={() => {
                 setActivatingConnector(currentConnector);
                 activate(connectorsByName[name]);
               }}
-              key={name}
+              className="connector"
             >
-              <div className="connector">
-                <div className="connector-title">{connectorUi[name].title}</div>
-              </div>
-            </Button>
+              <div className="connector-title">{connectorUi[name].title}</div>
+            </div>
           );
         })}
       </div>
